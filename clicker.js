@@ -2,6 +2,9 @@ i = 0;
 value_dps = 0;
 count_nami = 0;
 count_miss_fortune = 0;
+dps_nami = 0;
+dps_miss_fortune = 0;
+dps_total = 0;
 
 while (true)
 {
@@ -14,7 +17,8 @@ function clicking() {
 }
 
 function display_points() {
-	document.getElementById('display_place').innerHTML = i;	
+	document.getElementById('display_place').innerHTML = i;
+	document.getElementById('dps_total').innerHTML = dps_total;
 }
 
 function add() {
@@ -23,7 +27,10 @@ function add() {
 }
 
 function dps() {
-    i += 5;
+	dps_nami = count_nami * 1;
+	dps_miss_fortune = count_miss_fortune * 5;
+	dps_total = dps_nami + dps_miss_fortune;
+    i += dps_total;
     window.setTimeout('dps()', 1000);
     display_points();
 }
