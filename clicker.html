@@ -17,53 +17,53 @@
 <table class="shop">
 <div>
 	<tr>
-		<td class="shop.name">
+		<td class="shop.name" id="shop.name.nami">
 			Nom : Nami
 		</td>
-		<td class="shop.img">
-			<input type="image" class='nami' src="shop_nami.png"/>
+		<td class="shop.img" id="shop.img.nami">
+			<img class='nami' src="shop_nami.png"/>
 		</td>
 	</tr>
 	<tr>
-		<td class="shop.price">
-			Prix :
+		<td class="shop.price" id="shop.price.nami">
+			Prix : <span id="shop.price.nami"></span>
 		</td>
-		<td class="shop.buy">
-			<button class="display_place" id="buy_nami">Monter un niveau</button>
+		<td class="shop.buy" id="shop.buy.nami">
+			<button class="display_place" id="buy_nami"  onclick="buy_nami()">Monter un niveau</button>
 		</td>	
 	</tr>
 	<tr>
-		<td class="shop.dps">
-			CS :
+		<td class="shop.dps" id="shop.dps.nami">
+			CS : <span id="shop.dps.nami"></span>
 		</td>
 		<td class="shop.count">
-			Lvl :
+			Lvl : <span id="shop.count.nami"></span>
 		</td>	
 	</tr>
 </div>
 <div>
 	<tr>
-		<td class="shop.name">
+		<td class="shop.name" id="shop.name.miss-fortune">
 			Nom : Miss Fortune
 		</td>
-		<td class="shop.img">
-			<input type="image" class='miss-forture' src="shop_miss-fortune.png"/>
+		<td class="shop.img" id="shop.img.miss-fortune">
+			<img class='miss-fortune' src="shop_miss-fortune.png"/>
 		</td>
 	</tr>
 	<tr>
 		<td class="shop.price">
-			Prix :
+			Prix : <span id="shop.price.miss-fortune"></span>
 		</td>
 		<td class="shop.buy">
-			<button class="display_place" id="buy_nami">Monter un niveau</button>
+			<button class="display_place" id="shop.buy.miss-fortune" onclick="buy_miss_fortune()">Monter un niveau</button>
 		</td>	
 	</tr>
 	<tr>
 		<td class="shop.dps">
-			CS :
+			CS : <span id="shop.dps.miss-fortune"></span>
 		</td>
 		<td class="shop.count">
-			Lvl :
+			Lvl : <span id="shop.count.miss-fortune"></span>	
 		</td>	
 	</tr>
 </div>
