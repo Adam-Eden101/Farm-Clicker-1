@@ -1,5 +1,6 @@
 //General
 i = 0;
+click_dps = 1;
 dps_total = 0;
 
 //Nami
@@ -28,14 +29,13 @@ function display_points() {
 }
 
 function add() {
-	i = i + 1;
+	i = i + click_dps;
 	display_points();
 }
 
 function dps() {
-	dps_nami = count_nami * 1;
 	dps_miss_fortune = count_miss_fortune * 5;
-	dps_total = dps_nami + dps_miss_fortune;
+	dps_total = dps_miss_fortune;
     i += dps_total;
     if (dps_nami > 0)
 		document.getElementById('shop.dps.nami').innerHTML = dps_nami;
@@ -48,10 +48,13 @@ function dps() {
 function buy_nami() {
 	if (i >= prix_nami) {
 		i = i - prix_nami;
-		prix_nami = prix_nami + ((100 * count_nami)/10);
+		prix_nami = prix_nami + (100 * count_nami);
 		count_nami++;
+		dps_nami = count_nami;
+		click_dps = 1 + dps_nami;
 		document.getElementById('shop.price.nami').innerHTML = prix_nami;
 		document.getElementById('shop.count.nami').innerHTML = count_nami;
+		document.getElementById('click_dps').innerHTML = click_dps;
 	}
 	display_points();
 }
@@ -59,7 +62,7 @@ function buy_nami() {
 function buy_miss_fortune() {
 	if (i >= prix_miss_fortune) {
 		i = i - prix_miss_fortune;		
-		prix_miss_fortune = prix_miss_fortune + ((100 * count_miss_fortune)/10);
+		prix_miss_fortune = prix_miss_fortune + (100 * count_miss_fortune);
 		count_miss_fortune++;
 		document.getElementById('shop.price.miss-fortune').innerHTML = prix_miss_fortune;
 		document.getElementById('shop.count.miss-fortune').innerHTML = count_miss_fortune;

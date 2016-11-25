@@ -1,5 +1,8 @@
 body {
 	text-align: center;
+	font-family: 'Comic sans MS';
+	background-image: url('background.png');
+	color: white;
 }
 
 h1 {
@@ -10,7 +13,7 @@ button {
 	border-radius: 20px;
 	padding: 20px;
 	font-family: "Comic sans MS";
-	font-size: 20px; 
+	font-size: 15px; 
 }
 
 .clicking {
@@ -36,23 +39,42 @@ button {
 	top: 50px;
 }
 
+.upgrade {
+	position: absolute;
+	left: 0px;
+	top: 50px;
+}
+
 .divshop {
   	border: 1px solid black;
 }
 
 table {
 	width: 300px;
-  	border: 1px solid black;
+  	border: 5px solid black;
 }
 
-tr {
+.sous-shop tr {
 	background-color: white;
 }
 
-tr:hover {
-	background-color: #C0C0C0;
+.sous-shop td:hover {
+	font-weight: bold;
+	font-size: 18px;
 }
 
 td {
 	text-align: center;
+	color: black;
+}
+
+.gif {
+	position: absolute;
+	bottom: 100px;
+	right: 5px;
+	width: 310px;
+}
+
+#display-place {
+	font-size: 20px;
 }
