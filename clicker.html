@@ -7,12 +7,12 @@
 </head>
 <body>
 <header><h1>Farming Simulator</h1></header>
-<h3 class="dps_total">CS par seconde : <span id="dps_total"></span></h3>
+<h3 class="dps_total">CS total par seconde : <span id="dps_total"></span></h3>
 <div class="clicking">
 <button id="buttclicking" class='buttclicking' value="clicking" onclick="add()"><input type="image" class='imgclicking' src="minion.jpg" /></button>
 </div>
 <div class="display_points" id="display_points">
-<button class="display_place" id="display_place"></button>
+<button class="display_place" id="display_place">0</button>
 </div>
 <div>
 <table class="shop">
@@ -25,19 +25,19 @@
 		</td>
 	</tr>
 	<tr>
-		<td class="shop.price" id="shop.price.nami">
-			Prix : <span id="shop.price.nami"></span>
+		<td class="shop.price">
+			Prix : <span id="shop.price.nami">100</span>
 		</td>
 		<td class="shop.buy" id="shop.buy.nami">
 			<button class="display_place" id="buy_nami"  onclick="buy_nami()">Monter un niveau</button>
 		</td>	
 	</tr>
 	<tr>
-		<td class="shop.dps" id="shop.dps.nami">
-			CS : <span id="shop.dps.nami"></span>
+		<td class="shop.dps">
+			CS/s : <span id="shop.dps.nami">0</span>
 		</td>
 		<td class="shop.count">
-			Lvl : <span id="shop.count.nami"></span>
+			Lvl : <span id="shop.count.nami">0</span>
 		</td>	
 	</tr>
 	<tr>
@@ -50,7 +50,7 @@
 	</tr>
 	<tr>
 		<td class="shop.price">
-			Prix : <span id="shop.price.miss-fortune"></span>
+			Prix : <span id="shop.price.miss-fortune">1000</span>
 		</td>
 		<td class="shop.buy">
 			<button class="display_place" id="shop.buy.miss-fortune" onclick="buy_miss_fortune()">Monter un niveau</button>
@@ -58,10 +58,10 @@
 	</tr>
 	<tr>
 		<td class="shop.dps">
-			CS : <span id="shop.dps.miss-fortune"></span>
+			CS/s : <span id="shop.dps.miss-fortune">0</span>
 		</td>
 		<td class="shop.count">
-			Lvl : <span id="shop.count.miss-fortune"></span>	
+			Lvl : <span id="shop.count.miss-fortune">0</span>	
 		</td>	
 	</tr>
 </table>
