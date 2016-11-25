@@ -48,7 +48,7 @@ function dps() {
 function buy_nami() {
 	if (i >= prix_nami) {
 		i = i - prix_nami;
-		prix_nami = prix_nami + (100 * count_nami);
+		prix_nami = prix_nami + (10 * count_nami);
 		count_nami++;
 		dps_nami = count_nami;
 		click_dps = 1 + dps_nami;
