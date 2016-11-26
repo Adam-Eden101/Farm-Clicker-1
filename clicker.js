@@ -16,17 +16,17 @@ prix_miss_fortune = 500;
 //Rengar
 count_rengar = 0;
 dps_rengar = 0;
-prix_rengar = 1000;
+prix_rengar = 2500;
 
 //Viktor
 count_viktor = 0;
 dps_viktor = 0;
-prix_viktor = 5000;
+prix_viktor = 10000;
 
 //Nasus
 count_nasus = 0;
 dps_nasus = 0;
-prix_nasus = 100000;
+prix_nasus = 75000;
 
 //Creuset de Mikael
 var creuset_de_mikael = class creuset_de_mikael {
@@ -52,9 +52,9 @@ function add() {
 
 function dps() {
 	dps_miss_fortune = count_miss_fortune * 5;
-	dps_rengar = count_rengar * 10;
-	dps_viktor = count_viktor * 20;
-	dps_nasus = count_nasus * 1000;
+	dps_rengar = count_rengar * 50;
+	dps_viktor = count_viktor * 100;
+	dps_nasus = count_nasus * 250;
 	dps_total = dps_miss_fortune + dps_rengar + dps_viktor + dps_nasus;
     i += dps_total;
     if (dps_nami > 0)
@@ -73,7 +73,7 @@ function dps() {
 function buy_nami() {
 	if (i >= prix_nami) {
 		i = i - prix_nami;
-		prix_nami = prix_nami + (10 * count_nami);
+		prix_nami = parseInt(100 * Math.pow(1.15,(count_nami+1)));
 		count_nami++;
 		dps_nami = count_nami;
 		click_dps = 1 + dps_nami;
@@ -87,7 +87,7 @@ function buy_nami() {
 function buy_miss_fortune() {
 	if (i >= prix_miss_fortune) {
 		i = i - prix_miss_fortune;		
-		prix_miss_fortune = prix_miss_fortune + (100 * count_miss_fortune);
+		prix_miss_fortune = parseInt(500 * Math.pow(1.15,(count_miss_fortune+1)));
 		count_miss_fortune++;
 		document.getElementById('shop.price.miss-fortune').innerHTML = prix_miss_fortune;
 		document.getElementById('shop.count.miss-fortune').innerHTML = count_miss_fortune;
@@ -98,7 +98,7 @@ function buy_miss_fortune() {
 function buy_rengar() {
 	if (i >= prix_rengar) {
 		i = i - prix_rengar;		
-		prix_rengar = prix_rengar + (100 * count_rengar);
+		prix_rengar = parseInt(1000 * Math.pow(1.15,(count_rengar+1)));
 		count_rengar++;
 		document.getElementById('shop.price.rengar').innerHTML = prix_rengar;
 		document.getElementById('shop.count.rengar').innerHTML = count_rengar;
@@ -109,7 +109,7 @@ function buy_rengar() {
 function buy_viktor() {
 	if (i >= prix_viktor) {
 		i = i - prix_viktor;		
-		prix_viktor = prix_viktor + (100 * count_viktor);
+		prix_viktor = parseInt(5000 * Math.pow(1.15,(count_viktor+1)));
 		count_viktor++;
 		document.getElementById('shop.price.viktor').innerHTML = prix_viktor;
 		document.getElementById('shop.count.viktor').innerHTML = count_viktor;
@@ -120,7 +120,7 @@ function buy_viktor() {
 function buy_nasus() {
 	if (i >= prix_nasus) {
 		i = i - prix_nasus;		
-		prix_nasus = prix_nasus + (100 * count_nasus);
+		prix_nasus = parseInt(100000 * Math.pow(1.15,(count_nasus+1)));
 		count_nasus++;
 		document.getElementById('shop.price.nasus').innerHTML = prix_nasus;
 		document.getElementById('shop.count.nasus').innerHTML = count_nasus;
