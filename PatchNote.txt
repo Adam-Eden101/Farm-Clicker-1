@@ -1,0 +1,13 @@
+						=== Farming Simulator ===
+						Clicker game en Javascript
+v1.0 - 26/11
+____________
+
+- New
+	- but no one came...
+
+- Fix
+	- .js
+		- boucle du add() car inutile avec setTimeout
+		- suppression fonction clicking inutile
+		- remplacer window.setTimeout('dps()', 1000); par window.setInterval('dps()', 1000);

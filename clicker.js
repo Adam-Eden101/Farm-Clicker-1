@@ -13,15 +13,17 @@ count_miss_fortune = 0;
 dps_miss_fortune = 0;
 prix_miss_fortune = 1000;
 
-while (true)
-{
-	dps();
-}
+//Creuset de Mikael
+var creuset_de_mikael = class creuset_de_mikael {
+	constructor(name, image, price, desc) {
+		this.name = "Creuset de Mikael";
+		this.image = image;
+		this.price = price;
+		this.desc = desc;
+	}
+};
 
-function clicking() {
-	console.log(i);
-	add();
-}
+window.setInterval('dps()', 1000);
 
 function display_points() {
 	document.getElementById('display_place').innerHTML = i;
@@ -41,7 +43,6 @@ function dps() {
 		document.getElementById('shop.dps.nami').innerHTML = dps_nami;
     if (dps_miss_fortune > 0)
 		document.getElementById('shop.dps.miss-fortune').innerHTML = dps_miss_fortune;
-    window.setTimeout('dps()', 1000);
     display_points();
 }
 
@@ -68,4 +69,8 @@ function buy_miss_fortune() {
 		document.getElementById('shop.count.miss-fortune').innerHTML = count_miss_fortune;
 	}
 	display_points();
+}
+
+function buy_items() {
+
 }
