@@ -7,117 +7,100 @@
 	<link rel="icon" href="ressources/favicon.ico"/>
 </head>
 <body>
-<header><h1>Farming Simulator</h1></header>
-<img loop="-1" src="https://media.giphy.com/media/ikL2VRqsGjUYg/giphy.gif" class="gif" id="gif"/>
-<h3 class="dps_total">CS total par seconde : <span id="dps_total">0</span></h3>
-<h5 class="dps_total">Click Damage Total : <span id="click_dps">1</span></h5>
-<div class="clicking">
-<button id="buttclicking" class='buttclicking' value="clicking" onclick="add()"><input type="image" class='imgclicking' src="http://67.media.tumblr.com/2f85d563c9d4f2ae577df9017a5a7035/tumblr_inline_n3d6fyxcH01qixfi7.gif"/></button>
-</div>
-<div class="display_points" id="display_points">
-<button class="display_place" id="display_place">0</button>
-</div>
-<div>
-<table class="shop">
-	<tr>
-		<td>
-			<table class="sous-shop">
-				<tr>
-					<td class="shop.name" id="shop.name.nami">
-						Nom : Nami
-					</td>
-					<td class="shop.img" id="shop.img.nami">
-						<img class='nami' src="ressources/shop_nami.png"/>
-					</td>
-				</tr>
-				<tr>
-					<td class="shop.price">
-						Prix : <span id="shop.price.nami">100</span>
-					</td>
-					<td class="shop.buy" id="shop.buy.nami">
-						<button class="display_place" id="buy_nami"  onclick="buy_nami()">Monter un niveau</button>
-					</td>	
-				</tr>
-				<tr>
-					<td class="shop.dps">
-						+ : <span id="shop.dps.nami">0</span> click damage
-					</td>
-					<td class="shop.count">
-						Lvl : <span id="shop.count.nami">0</span>
-					</td>	
-				</tr>
-			</table>
-			<table class="sous-shop">	
-				<tr>
-					<td class="shop.name" id="shop.name.miss-fortune">
-						Nom : Miss Fortune
-					</td>
-					<td class="shop.img" id="shop.img.miss-fortune">
-						<img class='miss-fortune' src="ressources/shop_miss-fortune.png"/>
-					</td>
-				</tr>
-				<tr>
-					<td class="shop.price">
-						Prix : <span id="shop.price.miss-fortune">1000</span>
-					</td>
-					<td class="shop.buy">
-						<button class="display_place" id="shop.buy.miss-fortune" onclick="buy_miss_fortune()">Monter un niveau</button>
-					</td>	
-				</tr>
-				<tr>
-					<td class="shop.dps">
-						CS/s : <span id="shop.dps.miss-fortune">0</span>
-					</td>
-					<td class="shop.count">
-						Lvl : <span id="shop.count.miss-fortune">0</span>	
-					</td>	
-				</tr>
-			</table>
-		</td>
-	</tr>
-</table>
-<table class="upgrade">
-	<tr>
-		<td>
-			<table class="sous-shop">
-				<tr>
-					<td class="upgrade.name" id="upgrade.name.nami">
-						Nom : Creuset de Mikael
-					</td>
-					<td class="upgrade.img" id="upgrade.img.nami">
-						<img class='nami' src="ressources/upgrade_nami_1.png"/>
-					</td>
-				</tr>
-				<tr>
-					<td class="upgrade.price">
-						Prix : <span id="upgrade.price.nami">100</span>
-					</td>
-					<td class="upgrade.buy" id="upgrade.buy.nami">
-						<button class="display_place" id="buy_nami"  onclick="buy_nami()">Acheter pour Nami</button>
-					</td>
-				</tr>
-			</table>
-			<table class="sous-shop">		
-				<tr>
-					<td class="upgrade.name" id="upgrade.name.nami">
-						Nom : Lame de Doran
-					</td>
-					<td class="upgrade.img" id="upgrade.img.nami">
-						<img class='nami' src="ressources/upgrade_miss-fortune_1.png"/>
-					</td>
-				</tr>
-				<tr>
-					<td class="upgrade.price">
-						Prix : <span id="upgrade.price.nami">100</span>
-					</td>
-					<td class="upgrade.buy" id="upgrade.buy.nami">
-						<button class="display_place" id="buy_nami"  onclick="buy_nami()">Acheter pour Miss Fortune</button>
-					</td>	
-				</tr>
-			</table>
-		</td>
-	</tr>			
-</table>
-</div>
+	<div class="middle-section">
+		<h1>Farming Simulator</h1>
+		<h3 class="dps_total">CS total par seconde : <span id="dps_total">0</span></h3>
+		<h5 class="dps_total">Click Damage Total : <span id="click_dps">1</span></h5>
+		<div class="clicking">
+			<button id="buttclicking" class='buttclicking' value="clicking" onclick="add()"><input type="image" class='imgclicking' src="http://67.media.tumblr.com/2f85d563c9d4f2ae577df9017a5a7035/tumblr_inline_n3d6fyxcH01qixfi7.gif"/></button>
+		</div>
+		<div class="display_points" id="display_points">
+			<p class="display_place" id="display_place">Au commencement, il n'y avait rien...</p>
+		</div>
+	</div>
+	<div class="right-section">
+		<div class="shop.title" id="shop.title">
+			<img class='shop_title_img' id='shop_title_img' src="ressources/shopkeeper.jpg"/>
+			<span class='shop_title_title' id='shop_title_title'>Shop</span>
+		</div>
+		<div class="upgrade">
+			<div class="sous-upgrade">
+				<button id="buy_nami"  onclick="buy_nami()"><img class='nami' src="ressources/upgrade_nami_1.png"/></button>
+				<button id="buy_nami"  onclick="buy_nami()"><img class='nami' src="ressources/upgrade_miss-fortune_1.png"/></button>
+			</div>
+		</div>	
+		<div class="shop">
+			<div class="sous-shop">
+				<div class="shop_img" id="shop.img.nami">
+					<img class='shop_img_img' src="ressources/shop_nami.png"/>
+				</div>
+				<div class="content">
+					<div class="shop_name" id="shop.name.nami">Nami</div>
+					<div class="shop_price"><span id="shop.price.nami">100</span> CS</div>
+					<div class="shop_buy" id="shop.buy.nami">
+						<button class="shop_buy" id="buy_nami"  onclick="buy_nami()">Level Up</button>
+					</div>
+					<div class="shop_dps">+ : <span id="shop.dps.nami">0</span> click<br>damage</div>
+					<div class="shop_count">Lvl : <span id="shop.count.nami">0</span></div>
+				</div>
+			</div>	
+			<div class="sous-shop">	
+				<div class="shop_img" id="shop.img.miss-fortune">
+					<img class='miss-fortune' src="ressources/shop_miss-fortune.png"/>
+				</div>
+				<div class="content">
+					<div class="shop_name" id="shop.name.miss-fortune">Miss Fortune</div>
+					<div class="shop_price"><span id="shop.price.miss-fortune">500</span> CS</div>
+					<div class="shop_buy">
+						<button class="shop_buy" id="shop.buy.miss-fortune" onclick="buy_miss_fortune()">Level Up</button>
+					</div>	
+					<div class="shop_dps">CS/s : <span id="shop.dps.miss-fortune">0</span></div>
+					<div class="shop_count">Lvl : <span id="shop.count.miss-fortune">0</span></div>
+				</div>
+			</div>	
+			<div class="sous-shop">	
+				<div class="shop_img" id="shop.img.rengar">
+					<img class='rengar' src="ressources/shop_rengar.png"/>
+				</div>
+				<div class="content">
+					<div class="shop_name" id="shop.name.rengar">Rengar</div>
+					<div class="shop_price"><span id="shop.price.rengar">1000</span> CS</div>
+					<div class="shop_buy">
+						<button class="shop_buy" id="shop.buy.rengar" onclick="buy_rengar()">Level Up</button>
+					</div>	
+					<div class="shop_dps">CS/s : <span id="shop.dps.rengar">0</span></div>
+					<div class="shop_count">Lvl : <span id="shop.count.rengar">0</span></div>
+				</div>
+			</div>
+			<div class="sous-shop">	
+				<div class="shop_img" id="shop.img.viktor">
+					<img class='viktor' src="ressources/shop_viktor.png"/>
+				</div>
+				<div class="content">
+					<div class="shop_name" id="shop.name.viktor">Viktor</div>
+					<div class="shop_price"><span id="shop.price.viktor">5000</span> CS</div>
+					<div class="shop_buy">
+						<button class="shop_buy" id="shop.buy.viktor" onclick="buy_viktor()">Level Up</button>
+					</div>	
+					<div class="shop_dps">CS/s : <span id="shop.dps.viktor">0</span></div>
+					<div class="shop_count">Lvl : <span id="shop.count.viktor">0</span></div>
+				</div>
+			</div>
+			<div class="sous-shop">	
+				<div class="shop_img" id="shop.img.nasus">
+					<img class='nasus' src="ressources/shop_nasus.png"/>
+				</div>
+				<div class="content">
+					<div class="shop_name" id="shop.name.nasus">Nasus</div>
+					<div class="shop_price"><span id="shop.price.nasus">100000</span> CS</div>
+					<div class="shop_buy">
+						<button class="shop_buy" id="shop.buy.nasus" onclick="buy_nasus()">Level Up</button>
+					</div>	
+					<div class="shop_dps">CS/s : <span id="shop.dps.nasus">0</span></div>
+					<div class="shop_count">Lvl : <span id="shop.count.nasus">0</span></div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

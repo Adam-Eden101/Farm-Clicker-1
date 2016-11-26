@@ -5,75 +5,168 @@ body {
 	color: white;
 }
 
-h1 {
-	margin-bottom: 5%;
-}
+/*MIDDLE SECTION*/
 
-button {
-	border-radius: 20px;
-	padding: 20px;
-	font-family: "Comic sans MS";
-	font-size: 15px; 
-}
+	.middle-section {
+		position: absolute;
+		width: 70%;
+		left: 0;
+	    display: inline-block;
+		border: 5px solid black;
+		height: 100%;
+	}
 
-.clicking {
-	text-align: center;
-	margin-left: 30%
-	margin-right: 30%;
-}
+	.clicking {
+		text-align: center;
+		margin-left: 30%
+		margin-right: 30%;
+		border-radius: 20px;
+		padding: 20px;
+		font-family: "Comic sans MS";
+		font-size: 15px; 
+	}
 
-.buttclicking {
-	width: 300px;
-	height: 300px;
-}
+	.buttclicking {
+		width: 300px;
+		height: 300px;
+		border-radius: 20px;
+	}
 
-.imgclicking {
-	width: 250px;
-	height: 250px;
-}
+	.imgclicking {
+		width: 100%;
+	}
 
-.shop {
-	position: absolute;
-	right: 0px;
-	top: 50px;
-}
+	#display_place {
+		padding: 20px;
+		font-family: "Comic sans MS";
+		width: 10%;
+		margin: auto;
+		font-size: 20px;
+		background: rgba(255, 255, 255, 0.6);
+		color: black;
+		width: 100%;
+	}
 
-.upgrade {
-	position: absolute;
-	left: 0px;
-	top: 50px;
-}
+/*RIGHT SECTION*/
 
-.divshop {
-  	border: 1px solid black;
-}
+	.right-section {
+		background-color: white;
+		color: black;
+	    display: inline-block;
+		border: 5px solid black;
+		position: absolute;
+		right: 0;
+		width: 30%;
+		height: 100%;
+		text-align: left;
+	}
 
-table {
-	width: 300px;
-  	border: 5px solid black;
-}
+	.right-section img {
+		width: 20%;
+	}
 
-.sous-shop tr {
-	background-color: white;
-}
+	#shop_title_img {
 
-.sous-shop td:hover {
-	font-weight: bold;
-	font-size: 18px;
-}
+		width: 15%;
+		margin-top: 5px;
+		margin-left: 20%;
+	}
 
-td {
-	text-align: center;
-	color: black;
-}
+	#shop_title_title {
+		font-size: 40px;
+		font-weight: bold;
+	}
 
-.gif {
-	position: absolute;
-	bottom: 100px;
-	right: 5px;
-	width: 310px;
-}
+	.shop {
+		border-top: 5px solid black;
+		width: 100%;
+		height: 75%;
+		margin-bottom: 5px;
+	    display: inline-block;
+	}
 
-#display-place {
-	font-size: 20px;
-}
+	.upgrade {
+		border-top: 5px solid black;
+		height: auto;
+		padding-top: 5px;
+		margin-bottom: 5px;
+	}
+
+	.sous-upgrade button {
+		padding: 0;
+		width: 20%;
+	}
+	
+	.sous-upgrade img {
+		width: 50%;
+		border: 5px solid black;
+	}
+
+	.sous-shop {
+		position: relative;
+		border-bottom: 1px solid black;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		height: 18%;
+	}
+
+	.sous-shop img {
+		width: 25%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.sous-shop div {
+	    display: inline-block;
+	}
+
+	.sous-upgrade div {
+	    display: inline;
+	    margin-left: 20%;
+	}
+
+	.shop_img {
+		width: 20%;
+		padding: 0;
+	    display: inline-block;
+	}
+
+	.shop_name {
+		position: absolute;
+		left: 30%;
+		top: 20%;
+		font-size: 15px;
+	}
+
+	.shop_price {
+		position: absolute;
+		left: 30%;
+		top: 50%;
+		font-size: 15px;
+	}
+
+	.shop_count {
+			position: absolute;
+		left: 60%;
+		top: 20%;
+		font-size: 15px;
+	}
+	
+	.shop_dps {
+		position: absolute;
+		left: 60%;
+		top: 50%;
+		font-size: 15px;
+
+	}
+
+	.shop_buy {
+		position: absolute;
+		right: 1%;
+		top: 10%;
+		font-size: 16px;
+		width: 40%;
+		height: 80%;
+
+	}
