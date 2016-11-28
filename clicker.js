@@ -98,7 +98,7 @@ function buy_miss_fortune() {
 function buy_rengar() {
 	if (i >= prix_rengar) {
 		i = i - prix_rengar;		
-		prix_rengar = parseInt(1000 * Math.pow(1.15,(count_rengar+1)));
+		prix_rengar = parseInt(2500 * Math.pow(1.15,(count_rengar+1)));
 		count_rengar++;
 		document.getElementById('shop.price.rengar').innerHTML = prix_rengar;
 		document.getElementById('shop.count.rengar').innerHTML = count_rengar;
@@ -109,7 +109,7 @@ function buy_rengar() {
 function buy_viktor() {
 	if (i >= prix_viktor) {
 		i = i - prix_viktor;		
-		prix_viktor = parseInt(5000 * Math.pow(1.15,(count_viktor+1)));
+		prix_viktor = parseInt(10000 * Math.pow(1.15,(count_viktor+1)));
 		count_viktor++;
 		document.getElementById('shop.price.viktor').innerHTML = prix_viktor;
 		document.getElementById('shop.count.viktor').innerHTML = count_viktor;
@@ -120,7 +120,7 @@ function buy_viktor() {
 function buy_nasus() {
 	if (i >= prix_nasus) {
 		i = i - prix_nasus;		
-		prix_nasus = parseInt(100000 * Math.pow(1.15,(count_nasus+1)));
+		prix_nasus = parseInt(75000 * Math.pow(1.15,(count_nasus+1)));
 		count_nasus++;
 		document.getElementById('shop.price.nasus').innerHTML = prix_nasus;
 		document.getElementById('shop.count.nasus').innerHTML = count_nasus;
