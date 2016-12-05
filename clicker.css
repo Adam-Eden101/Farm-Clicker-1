@@ -61,10 +61,6 @@ body {
 		text-align: left;
 	}
 
-	.right-section img {
-		width: 35%
-	}
-
 	#shop_title_img {
 
 		width: 15%;
@@ -107,7 +103,7 @@ body {
 	
 	.buy_upgrade_img {
 		position: absolute;
-		width: 100%;
+		width: 30%;
 		left: 5%;
 		top: 20%;
 	}
@@ -117,7 +113,7 @@ body {
 		position: absolute;
 		font-size: 10px;
 		left: 30%;
-		top: 30%;
+		top: 20%;
 	}
 
 	.sous-shop {

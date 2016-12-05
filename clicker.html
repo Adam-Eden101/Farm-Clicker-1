@@ -25,39 +25,44 @@
 		</div>
 		<div class="upgrade">
 			<div class="sous-upgrade">
-				<button class='buy_upgrade' id="buy_nami"  onclick="buy_nami()">
+				<button class='buy_upgrade' id="buy_nami"  onclick="buy_item_nami()">
 					<img class='buy_upgrade_img' src="ressources/upgrade_nami_1.png"/>
 					<div class="upgrade_content">
 						<span>Nami</span><br>
-						<span>1000</span>
+						<span>1000</span><br>
+						<span id="multiplier_nami">x0</span>
 					</div>
 				</button>
 				<button class='buy_upgrade' id="buy_nami"  onclick="buy_nami()">
 					<img class='buy_upgrade_img' src="ressources/upgrade_miss-fortune_1.png"/>
 					<div class="upgrade_content">
 						<span>Miss F.</span><br>
-						<span>5000</span>
+						<span>5000</span><br>
+						<span>x0</span>
 					</div>
 				</button>
 				<button class='buy_upgrade' id="buy_nami"  onclick="buy_nami()">
 					<img class='buy_upgrade_img' src="ressources/upgrade_rengar_1.png"/>
 					<div class="upgrade_content">
 						<span>Rengar</span><br>
-						<span>10000</span>
+						<span>10000</span><br>
+						<span>x0</span>
 					</div>
 				</button>
 				<button class='buy_upgrade' id="buy_nami"  onclick="buy_nami()">
 					<img class='buy_upgrade_img' src="ressources/upgrade_viktor_1.png"/>
 					<div class="upgrade_content">
 						<span>Viktor</span><br>
-						<span>50000</span>
+						<span>50000</span><br>
+						<span>x0</span>
 					</div>
 				</button>
 				<button class='buy_upgrade' id="buy_nami"  onclick="buy_nami()">
 					<img class='buy_upgrade_img' src="ressources/upgrade_nasus_1.png"/>
 					<div class="upgrade_content">
 						<span>Nasus</span><br>
-						<span>100000</span>
+						<span>100000</span><br>
+						<span>x0</span>
 					</div>
 				</button>
 			</div>
@@ -74,6 +79,7 @@
 						<button class="shop_buy" id="buy_nami"  onclick="buy_nami()">Level Up</button>
 					</div>
 					<div class="shop_dps">+ : <span id="shop.dps.nami">0</span> click<br>damage</div>
+					<!--<div class="shop_multiplier">Multiplier : <span id="shop_multiplier_nami"></span></div>-->
 					<div class="shop_count">Lvl : <span id="shop.count.nami">0</span></div>
 				</div>
 			</div>	
@@ -102,6 +108,7 @@
 						<button class="shop_buy" id="shop.buy.rengar" onclick="buy_rengar()">Level Up</button>
 					</div>	
 					<div class="shop_dps">CS/s : <span id="shop.dps.rengar">0</span></div>
+					<!--<div class="shop_multiplier">Multiplier : <span id="shop_multiplier_rengar"></span></div>-->
 					<div class="shop_count">Lvl : <span id="shop.count.rengar">0</span></div>
 				</div>
 			</div>
