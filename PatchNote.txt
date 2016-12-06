@@ -1,5 +1,24 @@
 						=== Farming Simulator ===
 						Clicker game en Javascript
+v1.2 - 5/12
+____________
+
+- New
+	- Sauvegarde !
+		- Nombre de CS
+		- Niveau et prix des champions
+		
+- Fix
+	- Corrections divers bugs
+
+v1.1 - 26/11
+____________
+
+- New
+	- Rengar, Viktor et Nasus
+- Fix
+	- Refonte complete HTML/CSS
+
 v1.0 - 26/11
 ____________
 
@@ -11,11 +30,3 @@ ____________
 		- boucle du add() car inutile avec setTimeout
 		- suppression fonction clicking inutile
 		- remplacer window.setTimeout('dps()', 1000); par window.setInterval('dps()', 1000);
-
-v1.1 - 26/11
-____________
-
-- New
-	- Rengar, Viktor et Nasus
-- Fix
-	- Refonte complete HTML/CSS
