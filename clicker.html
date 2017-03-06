@@ -7,140 +7,142 @@
 	<link rel="icon" href="ressources/favicon.ico"/>
 </head>
 <body>
-	<div class="middle-section">
+	<section class="middle-section">
 		<h1>Farming Simulator</h1>
 		<h3 class="dps_total">CS total par seconde : <span id="dps_total">0</span></h3>
 		<h5 class="dps_total">Click Damage Total : <span id="click_dps">1</span></h5>
-		<div class="clicking">
-			<button id="buttclicking" class='buttclicking' value="clicking" onclick="add()"><input type="image" class='imgclicking' src="http://67.media.tumblr.com/2f85d563c9d4f2ae577df9017a5a7035/tumblr_inline_n3d6fyxcH01qixfi7.gif"/></button>
-		</div>
-		<div class="display_points" id="display_points">
+		<section class="clicking">
+			<button id="buttclicking" class='buttclicking' value="clicking" onclick="add()">
+				<input type="image" class='imgclicking' src="ressources/minion.gif"/>
+			</button>
+		</section>
+		<section class="display_points" id="display_points">
 			<p class="display_place" id="display_place">Au commencement, il n'y avait rien...</p>
-		</div>
-	</div>
-	<div class="right-section">
-		<div class="shop.title" id="shop.title">
+		</section>
+	</section>
+	<section class="right-section">
+		<section class="shop.title" id="shop.title">
 			<img class='shop_title_img' id='shop_title_img' src="ressources/shopkeeper.jpg"/>
 			<span class='shop_title_title' id='shop_title_title'>Shop</span>
-		</div>
-		<div class="upgrade">
-			<div class="sous-upgrade">
+		</section>
+		<section class="upgrade">
+			<section class="sous-upgrade">
 				<button class='buy_upgrade' id="buy_nami"  onclick="buy_item_nami()">
 					<img class='buy_upgrade_img' src="ressources/upgrade_nami_1.png"/>
-					<div class="upgrade_content">
+					<section class="upgrade_content">
 						<span>Nami</span><br>
 						<span>1000</span><br>
 						<span id="multiplier_nami">x0</span>
-					</div>
+					</section>
 				</button>
 				<button class='buy_upgrade' id="buy_nami"  onclick="buy_nami()">
 					<img class='buy_upgrade_img' src="ressources/upgrade_miss-fortune_1.png"/>
-					<div class="upgrade_content">
+					<section class="upgrade_content">
 						<span>Miss F.</span><br>
 						<span>5000</span><br>
 						<span>x0</span>
-					</div>
+					</section>
 				</button>
 				<button class='buy_upgrade' id="buy_nami"  onclick="buy_nami()">
 					<img class='buy_upgrade_img' src="ressources/upgrade_rengar_1.png"/>
-					<div class="upgrade_content">
+					<section class="upgrade_content">
 						<span>Rengar</span><br>
 						<span>10000</span><br>
 						<span>x0</span>
-					</div>
+					</section>
 				</button>
 				<button class='buy_upgrade' id="buy_nami"  onclick="buy_nami()">
 					<img class='buy_upgrade_img' src="ressources/upgrade_viktor_1.png"/>
-					<div class="upgrade_content">
+					<section class="upgrade_content">
 						<span>Viktor</span><br>
 						<span>50000</span><br>
 						<span>x0</span>
-					</div>
+					</section>
 				</button>
 				<button class='buy_upgrade' id="buy_nami"  onclick="buy_nami()">
 					<img class='buy_upgrade_img' src="ressources/upgrade_nasus_1.png"/>
-					<div class="upgrade_content">
+					<section class="upgrade_content">
 						<span>Nasus</span><br>
 						<span>100000</span><br>
 						<span>x0</span>
-					</div>
+					</section>
 				</button>
-			</div>
-		</div>	
-		<div class="shop">
-			<div class="sous-shop">
-				<div class="shop_img" id="shop.img.nami">
+			</section>
+		</section>
+		<section class="shop">
+			<section class="sous-shop">
+				<section class="shop_img" id="shop.img.nami">
 					<img class='shop_img_img' src="ressources/shop_nami.png"/>
-				</div>
-				<div class="content">
-					<div class="shop_name" id="shop.name.nami">Nami</div>
-					<div class="shop_price"><span id="shop.price.nami">100</span> CS</div>
-					<div class="shop_buy" id="shop.buy.nami">
+				</section>
+				<section class="content">
+					<section class="shop_name" id="shop.name.nami">Nami</section>
+					<section class="shop_price"><span id="shop.price.nami">100</span> CS</section>
+					<section class="shop_buy" id="shop.buy.nami">
 						<button class="shop_buy" id="buy_nami"  onclick="buy_nami()">Level Up</button>
-					</div>
-					<div class="shop_dps">+ : <span id="shop.dps.nami">0</span> click<br>damage</div>
+					</section>
+					<section class="shop_dps">+ : <span id="shop.dps.nami">0</span> click<br>damage</section>
 					<!--<div class="shop_multiplier">Multiplier : <span id="shop_multiplier_nami"></span></div>-->
-					<div class="shop_count">Lvl : <span id="shop.count.nami">0</span></div>
-				</div>
-			</div>	
-			<div class="sous-shop">	
-				<div class="shop_img" id="shop.img.miss-fortune">
+					<section class="shop_count">Lvl : <span id="shop.count.nami">0</span></section>
+				</section>
+			</section>
+			<section class="sous-shop">
+				<section class="shop_img" id="shop.img.miss-fortune">
 					<img class='miss-fortune' src="ressources/shop_miss-fortune.png"/>
-				</div>
-				<div class="content">
-					<div class="shop_name" id="shop.name.miss-fortune">Miss Fortune</div>
-					<div class="shop_price"><span id="shop.price.miss-fortune">500</span> CS</div>
-					<div class="shop_buy">
+				</section>
+				<section class="content">
+					<section class="shop_name" id="shop.name.miss-fortune">Miss Fortune</section>
+					<section class="shop_price"><span id="shop.price.miss-fortune">500</span> CS</section>
+					<section class="shop_buy">
 						<button class="shop_buy" id="shop.buy.miss-fortune" onclick="buy_miss_fortune()">Level Up</button>
-					</div>	
-					<div class="shop_dps">CS/s : <span id="shop.dps.miss-fortune">0</span></div>
-					<div class="shop_count">Lvl : <span id="shop.count.miss-fortune">0</span></div>
-				</div>
-			</div>	
-			<div class="sous-shop">	
-				<div class="shop_img" id="shop.img.rengar">
+					</section>
+					<section class="shop_dps">CS/s : <span id="shop.dps.miss-fortune">0</span></section>
+					<section class="shop_count">Lvl : <span id="shop.count.miss-fortune">0</span></section>
+				</section>
+			</section>
+			<section class="sous-shop">
+				<section class="shop_img" id="shop.img.rengar">
 					<img class='rengar' src="ressources/shop_rengar.png"/>
-				</div>
-				<div class="content">
-					<div class="shop_name" id="shop.name.rengar">Rengar</div>
-					<div class="shop_price"><span id="shop.price.rengar">2500</span> CS</div>
-					<div class="shop_buy">
+				</section>
+				<section class="content">
+					<section class="shop_name" id="shop.name.rengar">Rengar</section>
+					<section class="shop_price"><span id="shop.price.rengar">2500</span> CS</section>
+					<section class="shop_buy">
 						<button class="shop_buy" id="shop.buy.rengar" onclick="buy_rengar()">Level Up</button>
-					</div>	
-					<div class="shop_dps">CS/s : <span id="shop.dps.rengar">0</span></div>
+					</section>
+					<section class="shop_dps">CS/s : <span id="shop.dps.rengar">0</span></section>
 					<!--<div class="shop_multiplier">Multiplier : <span id="shop_multiplier_rengar"></span></div>-->
-					<div class="shop_count">Lvl : <span id="shop.count.rengar">0</span></div>
-				</div>
-			</div>
-			<div class="sous-shop">	
-				<div class="shop_img" id="shop.img.viktor">
+					<section class="shop_count">Lvl : <span id="shop.count.rengar">0</span></section>
+				</section>
+			</section>
+			<section class="sous-shop">
+				<section class="shop_img" id="shop.img.viktor">
 					<img class='viktor' src="ressources/shop_viktor.png"/>
-				</div>
-				<div class="content">
-					<div class="shop_name" id="shop.name.viktor">Viktor</div>
-					<div class="shop_price"><span id="shop.price.viktor">10000</span> CS</div>
-					<div class="shop_buy">
+				</section>
+				<section class="content">
+					<section class="shop_name" id="shop.name.viktor">Viktor</section>
+					<section class="shop_price"><span id="shop.price.viktor">10000</span> CS</section>
+					<section class="shop_buy">
 						<button class="shop_buy" id="shop.buy.viktor" onclick="buy_viktor()">Level Up</button>
-					</div>	
-					<div class="shop_dps">CS/s : <span id="shop.dps.viktor">0</span></div>
-					<div class="shop_count">Lvl : <span id="shop.count.viktor">0</span></div>
-				</div>
-			</div>
-			<div class="sous-shop">	
-				<div class="shop_img" id="shop.img.nasus">
+					</section>
+					<section class="shop_dps">CS/s : <span id="shop.dps.viktor">0</span></section>
+					<section class="shop_count">Lvl : <span id="shop.count.viktor">0</span></section>
+				</section>
+			</section>
+			<section class="sous-shop">
+				<section class="shop_img" id="shop.img.nasus">
 					<img class='nasus' src="ressources/shop_nasus.png"/>
-				</div>
-				<div class="content">
-					<div class="shop_name" id="shop.name.nasus">Nasus</div>
-					<div class="shop_price"><span id="shop.price.nasus">75000</span> CS</div>
-					<div class="shop_buy">
+				</section>
+				<section class="content">
+					<section class="shop_name" id="shop.name.nasus">Nasus</section>
+					<section class="shop_price"><span id="shop.price.nasus">75000</span> CS</section>
+					<section class="shop_buy">
 						<button class="shop_buy" id="shop.buy.nasus" onclick="buy_nasus()">Level Up</button>
-					</div>	
-					<div class="shop_dps">CS/s : <span id="shop.dps.nasus">0</span></div>
-					<div class="shop_count">Lvl : <span id="shop.count.nasus">0</span></div>
-				</div>
-			</div>
-		</div>
-	</div>
+					</section>
+					<section class="shop_dps">CS/s : <span id="shop.dps.nasus">0</span></section>
+					<section class="shop_count">Lvl : <span id="shop.count.nasus">0</span></section>
+				</section>
+			</section>
+		</section>
+	</section>
 </body>
 </html>

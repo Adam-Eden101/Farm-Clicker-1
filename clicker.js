@@ -43,7 +43,7 @@
 		else
 			prix_nami = 100;
 		multiplier_nami = 1;
-		prix_item_nami_1 = 1000;
+		prix_item_nami = 1000;
 		unlock_item_nami = 10;
 
 	//Miss Fortune
@@ -145,16 +145,6 @@
 			prix_nasus = 75000;
 		multiplier_nasus = 1;
 		prix_item_nasus_1 = 750000;
-
-	//Creuset de Mikael
-		var creuset_de_mikael = class creuset_de_mikael {
-			constructor(name, image, price, desc) {
-				this.name = "Creuset de Mikael";
-				this.image = image;
-				this.price = price;
-				this.desc = desc;
-			}
-		};
 
 //Fonctions
 
@@ -267,14 +257,16 @@
 		}
 
 		function buy_item_nami() {
-			if (count_nami >= unlock_item_nami && i >= prix_item_nami_1) {
+			if (i >= prix_item_nami) {
 				if (multiplier_nami == 1)
-					multiplier_nami == 2
+					multiplier_nami = 2;
 				else
 					multiplier_nami = multiplier_nami + 2;
-				unlock_item_nami = unlock_item_nami * 10;
-				i = i - prix_item_nami_1;
+				i = i - prix_item_nami;
+				prix_item_nami*=25;
 			}
+            affichage();
+            display_points();
 		}
 
 	function create_cookies() {
