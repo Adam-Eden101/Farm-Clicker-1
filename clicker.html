@@ -9,12 +9,12 @@
     <script>
         $(document).ready(function () {
             var player = new Player();
-            var nami = new Champion("Nami", 100, 1);
-            var miss_fortune = new Champion("Miss Fortune", 500, 5);
-            var rengar = new Champion("Rengar", 2500, 50);
-            var viktor = new Champion("Viktor", 10000, 100);
-            var nasus = new Champion("Nasus", 75000, 250);
-            var Champions = [nami, miss_fortune,rengar,viktor,nasus];
+            var nami = new Champion("Nami", "nami", 100, 1);
+            var miss_fortune = new Champion("Miss Fortune", "miss-fortune", 500, 5);
+            var rengar = new Champion("Rengar", "rengar", 2500, 50);
+            var viktor = new Champion("Viktor", "viktor", 10000, 100);
+            var nasus = new Champion("Nasus", "nasus", 75000, 250);
+            var Champions = [nami, miss_fortune, rengar, viktor, nasus];
             window.setInterval(function () {
                 dps(player, Champions)
             }, 1000);
