@@ -29,26 +29,7 @@ function display_points(player) {
     $("#click_dps").html(player.click_dps);
 }
 
-function add(player, nami) {
-    player.dps = nami.count;
-    player.score = player.score + player.click_dps;
-    display_points(player);
-}
-
-function dps(player, Champions) {
-    var x = 1;
-    player.dps_total = 0;
-    while (x < Champion.length) {
-        player.dps_total += Champions[x].dps;
-        x++;
-    }
-    player.score+= player.dps_total;
-    // create_cookies(player, Champion);
-    affichage(Champions, player);
-}
-
 function affichage(Champions, player) {
-    var x = 0;
     Champions.forEach(function (Champion) {
         if (Champion.count > 0) {
             $("shop.dps." + Champion.id).html(Champion.dps);
@@ -58,6 +39,22 @@ function affichage(Champions, player) {
         }
     });
     display_points(player);
+}
+
+function add(player, nami) {
+    player.dps = nami.count;
+    player.score = player.score + player.click_dps;
+    display_points(player);
+}
+
+function dps(player, Champions) {
+    player.dps_total = 0;
+    Champions.forEach(function (Champion) {
+        player.dps_total += Champion.dps;
+    });
+    player.score+= player.dps_total;
+    // create_cookies(player, Champion);
+    affichage(Champions, player);
 }
 
     //Achat
@@ -76,7 +73,7 @@ function buy_champion(player, champion, Champions) {
     display_points(player);
 }
 
-function buy_item_nami() {
+/*function buy_item_nami() {
     if (count_nami >= unlock_item_nami &&score>= prix_item_nami_1) {
         if (multiplier_nami === 1) {
             multiplier_nami = 2;
@@ -87,4 +84,4 @@ function buy_item_nami() {
         unlock_item_nami = unlock_item_nami * 10;
         score = score - prix_item_nami_1;
     }
-}
+}*/
