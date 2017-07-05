@@ -23,7 +23,7 @@ function Champion(name, id, base_price, base_dps) {
 
     //Core
 
-function display_points(player) {
+function displayPoints(player) {
     $("display_place").html(player.score + " CS");
     $("dps_total").html(player.dps_total);
     $("#click_dps").html(player.click_dps);
@@ -38,13 +38,13 @@ function affichage(Champions, player) {
             //$("multiplier_" + Champion.id).hmtl("x" + Champion.multiplier);
         }
     });
-    display_points(player);
+    displayPoints(player);
 }
 
 function add(player, nami) {
     player.dps = nami.count;
     player.score = player.score + player.click_dps;
-    display_points(player);
+    displayPoints(player);
 }
 
 function dps(player, Champions) {
@@ -59,7 +59,7 @@ function dps(player, Champions) {
 
     //Achat
 
-function buy_champion(player, champion, Champions) {
+function buyChampion(player, champion, Champions) {
     if (player.score >= champion.price) {
         player.score -= champion.price;
         champion.count++;
@@ -70,7 +70,7 @@ function buy_champion(player, champion, Champions) {
         }
     }
     affichage(Champions, player);
-    display_points(player);
+    displayPoints(player);
 }
 
 /*function buy_item_nami() {
