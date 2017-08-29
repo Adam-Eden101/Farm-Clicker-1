@@ -1,12 +1,22 @@
 === Farming Simulator ===
 						Clicker game en Javascript
+
+v2.2 - 21/06/2017
+____________
+
+- New
+	- Changement
+	
+
 v2.1 - 21/06/2017
 ____________
 
 - New
-	- Refonte du code en orienté objet
-	- Plus de cheat possible
-	- Le système de sauvegarde est momentanément retiré. 
+	- Changement de l'hébergement.
+	- Mise en place de l'inscription et de la connexion en vue de la mise en place de la sauvegarde.
+	
+- Fix
+	- Correction du bug critique qui empechait d'afficher les informations.
 
 v1.2 - 5/12
 ____________
