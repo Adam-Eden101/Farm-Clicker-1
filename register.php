@@ -42,10 +42,7 @@ if ($_SESSION["login"] == true)
 
             function user_register($username1, $email, $pwd){
                 try {
-                    $servername = "localhost";
-                    $username = "id2741208_nevios";
-                    $password = "Nevreap0618er";
-                    $dbname = "id2741208_games";
+                    /*SECRET*/
                     $dbh = new PDO("mysql:host=$servername;dbname=$dbname;charset=utf8", $username, $password);
                     $sql = 'SELECT * FROM farmSimulator_USERS WHERE Email= :email';
                     $stmt = $dbh->prepare($sql);
