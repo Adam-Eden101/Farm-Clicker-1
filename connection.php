@@ -48,10 +48,7 @@ function connection($username, $password)
 {
     if ((check_nom($username) == 0) && (check_password_co($password) == 0))
     {
-        $servername = "localhost";
-        $dbusername = "id2741208_nevios";
-        $dbpassword = "Nevreap0618er";
-        $dbname = "id2741208_games";
+        /* SECRET */
         $dbh = new PDO("mysql:host=$servername;dbname=$dbname;charset=utf8", $dbusername, $dbpassword);
         if ($dbh == true)
         {
