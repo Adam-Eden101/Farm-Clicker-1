@@ -16,7 +16,7 @@
             var nasus = new Champion("Nasus", "nasus", 75000, 250);
             var Champions = [nami, miss_fortune, rengar, viktor, nasus];
             window.setInterval(function () {
-                dps(player, Champions)
+                dps(player, Champions);
             }, 1000);
             $("#buttclicking").click(function () {
                 add(player, nami);
@@ -45,7 +45,7 @@
         <h3 class="dps_total">CS total par seconde : <span id="dps_total">0</span></h3>
         <h5 class="dps_total">Click Damage Total : <span id="click_dps">1</span></h5>
         <div class="clicking">
-            <button id="buttclicking" class='buttclicking' value="clicking"><img class='imgclicking' src="http://67.media.tumblr.com/2f85d563c9d4f2ae577df9017a5a7035/tumblr_inline_n3d6fyxcH01qixfi7.gif"/></button>
+            <button id="buttclicking" class='buttclicking' value="clicking"><img class='imgclicking' src="ressources/minion.gif"/></button>
         </div>
         <div class="displayPoints" id="displayPoints">
             <p class="display_place" id="display_place">Au commencement, il n'y avait rien...</p>

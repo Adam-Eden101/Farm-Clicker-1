@@ -1,3 +1,7 @@
+function print(p) { console.log(p); }
+function ping() { print("ping"); }
+function pong() { print("pong"); }
+
 function Player() {
     this.score = 0;
     this.click_dps = 1;
@@ -24,17 +28,17 @@ function Champion(name, id, base_price, base_dps) {
     //Core
 
 function displayPoints(player) {
-    $("display_place").html(player.score + " CS");
-    $("dps_total").html(player.dps_total);
+    $("#display_place").html(player.score + " CS");
+    $("#dps_total").html(player.dps_total);
     $("#click_dps").html(player.click_dps);
 }
 
 function affichage(Champions, player) {
     Champions.forEach(function (Champion) {
         if (Champion.count > 0) {
-            $("shop.dps." + Champion.id).html(Champion.dps);
-            $("shop.price." + Champion.id).html(Champion.price);
-            $("shop.count." + Champion.id).html(Champion.count);
+            $("#shop.dps." + Champion.id).html(Champion.dps);
+            $("#shop.price." + Champion.id).html(Champion.price);
+            $("#shop.count." + Champion.id).html(Champion.count);
             //$("multiplier_" + Champion.id).hmtl("x" + Champion.multiplier);
         }
     });
